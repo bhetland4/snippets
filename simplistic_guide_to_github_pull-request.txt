@@ -17,4 +17,8 @@ git add oldfile.cpp
 #
 git commit -m"The commit message goes here"
 git push -u origin BRANCHNAME
-
+# make another change & commit
+git push
+# now log on to github.com and Create a Pull Request
+# base:main    compare:BRANCHNAME
+# -->  Create pull request
