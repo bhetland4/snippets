@@ -13,13 +13,15 @@ int main (void) {
 
   std::locale cla(std::locale::classic());
   std::locale nn("nn_NO.utf8");
+  std::locale nb("nb_NO.utf8");
   std::locale loc("");
   std::cout << "foo.name: " << foo.name() <<
              "\nbar.name: " << bar.name() <<
-             "\nnn.name:  " << nn.name() <<
+             "\nnb.name:  " << nb.name() <<
              "\nloc.name: " << loc.name() <<
              "\ncla.name: " << cla.name() <<
              "\nclassic:  " << std::locale::classic().name() <<
+             "\nnn.name:  " << nn.name() <<
              "\n";
 
   return 0;
