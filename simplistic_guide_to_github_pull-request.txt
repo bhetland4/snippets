@@ -1,0 +1,20 @@
+# Below USER represents your user name on github, which must have
+# been prepared and set up with SSH keys (at least for authentication).
+# I use 'snippets' (this repo) to represent the repository name
+# (as in snippets.git).
+# The uppercase BRANCHNAME should be literally substituted for your
+# chosen branch name. (I simply assume you will use the same name
+# both locally and remotely on github.)
+
+git clone git@github.com:USER/snippets.git
+cd snippets
+git pull
+git branch BRANCHNAME
+git switch BRANCHNAME
+# make your changes and add files etc...
+git add new_file.txt
+git add oldfile.cpp
+#
+git commit -m"The commit message goes here"
+git push -u origin BRANCHNAME
+
